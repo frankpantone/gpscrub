@@ -1,0 +1,284 @@
+================================================================================
+                     FILE GUIDE - WHAT EACH FILE DOES
+================================================================================
+
+YOUR PROJECT FOLDER STRUCTURE:
+gatepassscrub/
+│
+├─── 🚀 MAIN SCRIPTS (Double-click or run from command line)
+│    ├── process_pdf.bat                    ⭐ EASIEST - Double-click to start!
+│    ├── hertz_email_generator.py           ⭐ Process single PDF
+│    └── batch_process_pdfs.py              ⭐ Process multiple PDFs
+│
+├─── 📖 DOCUMENTATION (Read these first!)
+│    ├── QUICK_START.md                     ⭐ START HERE - Beginner guide
+│    ├── README.md                          📚 Complete documentation
+│    ├── PROJECT_SUMMARY.md                 📊 Project overview & results
+│    ├── EMAIL_TEMPLATE_EXAMPLE.txt         ✉️  See what emails look like
+│    └── FILE_GUIDE.txt                     📋 This file!
+│
+├─── 📊 ANALYSIS REPORTS (Reference material)
+│    ├── pdf_structure_analysis.md          🔍 Detailed PDF analysis
+│    ├── field_mapping.txt                  📍 Line-by-line field mapping
+│    └── form_structure_diagram.txt         🎨 Visual form structure
+│
+├─── 📄 PDF FILES (Your gate release PDFs)
+│    └── GR4031029_KNDPU3AF3P7143419.pdf   📄 Example PDF
+│
+└─── 🔧 AUTO-GENERATED (Created by scripts)
+     ├── pdf_extracted_text.txt             💾 Last extracted text
+     └── batch_report_*.txt                 📊 Batch processing reports
+
+================================================================================
+                     QUICK REFERENCE - WHICH FILE DO I USE?
+================================================================================
+
+┌──────────────────────────────────────────────────────────────────────────┐
+│ SITUATION                          │ FILE TO USE                         │
+├────────────────────────────────────┼─────────────────────────────────────┤
+│ First time setup                   │ QUICK_START.md                      │
+│ Process one PDF (easiest)          │ process_pdf.bat (double-click)      │
+│ Process one PDF (command line)     │ hertz_email_generator.py            │
+│ Process many PDFs                  │ batch_process_pdfs.py               │
+│ Understand PDF structure           │ pdf_structure_analysis.md           │
+│ See email example                  │ EMAIL_TEMPLATE_EXAMPLE.txt          │
+│ Full documentation                 │ README.md                           │
+│ Troubleshooting                    │ README.md or QUICK_START.md         │
+│ Project overview                   │ PROJECT_SUMMARY.md                  │
+└────────────────────────────────────┴─────────────────────────────────────┘
+
+================================================================================
+                     FILE DESCRIPTIONS
+================================================================================
+
+🚀 EXECUTABLES/SCRIPTS
+----------------------
+
+process_pdf.bat
+  └─> Windows batch file launcher
+      • Double-click to run
+      • Automatically detects PDFs
+      • Checks for Python and dependencies
+      • Offers menu for single/batch processing
+      • Best for non-technical users
+
+hertz_email_generator.py
+  └─> Main Python script
+      • Processes single PDF files
+      • Extracts vehicle info, emails, location
+      • Creates Outlook email drafts
+      • Can run interactively or automatically
+      • Command: python hertz_email_generator.py [file.pdf] [--auto]
+
+batch_process_pdfs.py
+  └─> Batch processing script
+      • Processes multiple PDFs at once
+      • Creates summary reports
+      • Generates individual email drafts
+      • Saves detailed batch report
+      • Command: python batch_process_pdfs.py [--auto]
+
+================================================================================
+
+📖 DOCUMENTATION FILES
+----------------------
+
+QUICK_START.md ⭐ READ THIS FIRST!
+  └─> Beginner-friendly guide
+      • Step-by-step setup instructions
+      • How to process PDFs
+      • Common commands
+      • Tips and troubleshooting
+      • Perfect for first-time users
+
+README.md
+  └─> Complete technical documentation
+      • Full feature list
+      • Detailed usage instructions
+      • Customization options
+      • Advanced troubleshooting
+      • For power users and developers
+
+PROJECT_SUMMARY.md
+  └─> High-level project overview
+      • What was built
+      • What problems it solves
+      • Key achievements
+      • Analysis results
+      • Success metrics
+
+EMAIL_TEMPLATE_EXAMPLE.txt
+  └─> Email format reference
+      • Shows exactly what emails look like
+      • Explains each section
+      • Customization instructions
+      • Data source mapping
+
+FILE_GUIDE.txt (this file)
+  └─> Quick reference guide
+      • What each file does
+      • Which file to use when
+      • File organization
+
+================================================================================
+
+📊 ANALYSIS REPORTS (Reference)
+--------------------------------
+
+pdf_structure_analysis.md
+  └─> Comprehensive PDF analysis
+      • Document structure breakdown
+      • Field identification (placeholder vs value)
+      • Email locations and context
+      • Recommended scrubbing approaches
+      • Section-by-section analysis
+
+field_mapping.txt
+  └─> Line-by-line data mapping
+      • Shows exact line numbers
+      • Identifies placeholders vs values
+      • Marks email addresses
+      • Data classification
+
+form_structure_diagram.txt
+  └─> Visual form structure
+      • ASCII diagram of form sections
+      • Shows data relationships
+      • Email scrubbing targets
+      • Field hierarchies
+
+================================================================================
+
+📄 PDF FILES
+------------
+
+GR4031029_KNDPU3AF3P7143419.pdf
+  └─> Example gate release form
+      • Sample PDF for testing
+      • Contains all data types
+      • Used for development/testing
+
+[Your PDF files go here]
+  └─> Place your gate release PDFs here
+      • The scripts will auto-detect them
+      • Can process one or many
+      • Original files are never modified
+
+================================================================================
+
+🔧 AUTO-GENERATED FILES
+-----------------------
+
+pdf_extracted_text.txt
+  └─> Text extracted from last processed PDF
+      • Created automatically
+      • Useful for debugging
+      • Shows what the script "sees"
+      • Gets overwritten each run
+
+batch_report_YYYYMMDD_HHMMSS.txt
+  └─> Batch processing report
+      • Created by batch_process_pdfs.py
+      • Lists all processed files
+      • Shows success/failure status
+      • Includes extracted data summary
+      • Timestamped filename
+
+================================================================================
+                     TYPICAL WORKFLOW
+================================================================================
+
+FOR FIRST-TIME USERS:
+1. Read QUICK_START.md
+2. Double-click process_pdf.bat
+3. Review email draft in Outlook
+4. Send when ready!
+
+FOR SINGLE PDF:
+1. Place PDF in folder
+2. Run: python hertz_email_generator.py --auto
+3. Review draft in Outlook
+4. Send
+
+FOR MULTIPLE PDFs:
+1. Place all PDFs in folder
+2. Run: python batch_process_pdfs.py --auto
+3. Review each draft in Outlook
+4. Check batch_report_*.txt for summary
+5. Send drafts when ready
+
+FOR DEVELOPERS:
+1. Read README.md
+2. Review pdf_structure_analysis.md
+3. Check source code in hertz_email_generator.py
+4. Customize as needed
+
+================================================================================
+                     CUSTOMIZATION
+================================================================================
+
+Want to change something?
+
+Email Template          → Edit hertz_email_generator.py (lines 165-184)
+Response Deadline       → Edit hertz_email_generator.py (line 155)
+Subject Line            → Edit hertz_email_generator.py (lines 159-163)
+Vehicle Makes           → Edit hertz_email_generator.py (lines 62-65)
+Add New Data Fields     → Edit parse_data() method
+
+See README.md for detailed customization instructions.
+
+================================================================================
+                     NEED HELP?
+================================================================================
+
+Issue                          Solution
+─────────────────────────────  ────────────────────────────────────────────
+Don't know where to start      → Read QUICK_START.md
+Script won't run               → Check Python is installed
+Missing dependencies           → Run: pip install pypdf pywin32
+Outlook draft not created      → Ensure Outlook is installed/configured
+Wrong data extracted           → Check pdf_extracted_text.txt
+Want to customize              → See README.md customization section
+Multiple PDFs to process       → Use batch_process_pdfs.py
+Need examples                  → Check EMAIL_TEMPLATE_EXAMPLE.txt
+
+================================================================================
+                     SUMMARY
+================================================================================
+
+✅ READY TO USE
+  • All scripts are functional and tested
+  • Documentation is complete
+  • Example PDF included
+
+✅ EASY TO START
+  • Double-click process_pdf.bat
+  • Or read QUICK_START.md for step-by-step
+
+✅ WELL DOCUMENTED
+  • Beginner guides
+  • Technical documentation
+  • Code comments
+  • Examples provided
+
+✅ SAFE & SECURE
+  • Only creates drafts (never auto-sends)
+  • All processing is local
+  • No data sent externally
+  • You review before sending
+
+================================================================================
+                     GET STARTED NOW!
+================================================================================
+
+1. Start here: QUICK_START.md
+2. Then run:   process_pdf.bat (double-click)
+3. Get help:   README.md
+
+That's it! You're ready to go! 🚀
+
+================================================================================
+
+
+
+

@@ -1,0 +1,67 @@
+Pickup Location Gate Release Code
+Contact 
+Phone
+Address Email
+Hours of Operation
+Order Number
+Instruction
+Vehicle Information Noted Damage
+  Owning Area Number Unit Number
+  Serial Odometer
+  Model Year Color
+  Make Model
+  Body Type / Pkg License #
+Purchaser
+  Representative   Name
+  Manager   Contact
+  Office #   Address
+  Cell #
+  Fax #   Phone
+  Email
+Driver / Transporter Information
+  Transport Company / Dealership
+  Driver / Transporter Printed Name
+  Driver / Transporter License Number
+  Driver / Transporter Signature
+  Hertz Authorized Signature
+  Date Picked Up
+Name
+(317) 775-8055
+(317) 775-8055
+M-F 8am - 3pm
+Brian Swift/Khadijah Goudeau
+GRAY
+Mike Bloom
+4031029
+4142179780
+konovak@hertz.com
+2825 W. Perimeter Rd
+221 N 36th St
+2025-10-28
+Indianapolis, IN 46241
+Kunes Country Honda of Quincy Inc
+Khadijah.Goudeau@hertz.com
+FWD
+BSwift@hertz.com
+SPORTAGE
+KIA
+Kori Novak
+8662225012
+2151439
+66855
+Transporter and Purchaser agree to assume responsibility for any risk,
+loss or damage to vehicle(s) at such time as the vehicle(s) are received
+and accepted  by Transporter or Purchaser.
+RHP AP INDIANAPOLIS
+2836
+VL3NRTBB
+2023
+Kori Novak
+Quincy, IL 62301
+4142179780
+QNFB46
+Hertz Rep Information
+KNDPU3AF3P7143419
+2172287000
+TRANSPORTER MUST PRESENT THIS GATE RELEASE AT TIME OF PICK UP. VEHICLE WILL NOT BE RELEASED WITHOUT IT
+There is no Hertz buildings or employees on this lot. Please call us at (317) 775-8055 and we will come meet you on this lot

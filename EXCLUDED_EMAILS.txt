@@ -1,0 +1,54 @@
+================================================================================
+                    HARDCODED EMAIL EXCLUSIONS
+================================================================================
+
+The following email addresses are ALWAYS excluded from email drafts:
+
+  ✅ konovak@hertz.com
+
+This email belongs to the purchaser (Kori Novak) and should NEVER be included
+in TO or CC fields for logistics confirmation emails.
+
+================================================================================
+HOW TO ADD MORE EXCLUSIONS
+================================================================================
+
+To add more emails to the permanent exclusion list:
+
+1. Open: hertz_email_generator.py
+2. Find line 48: ALWAYS_EXCLUDE = ['konovak@hertz.com']
+3. Add more emails to the list:
+
+   ALWAYS_EXCLUDE = ['konovak@hertz.com', 'another@hertz.com']
+
+4. Save the file
+
+The emails will be excluded from ALL future email drafts.
+
+================================================================================
+WHY THIS WAS ADDED
+================================================================================
+
+Issue: konovak@hertz.com was sometimes being included in TO field due to
+       varying PDF structures (appearing in different sections)
+
+Solution: Hardcoded exclusion list that ALWAYS excludes this email,
+          regardless of PDF structure or position
+
+Result: konovak@hertz.com will NEVER appear in email drafts
+
+================================================================================
+CURRENT STATUS
+================================================================================
+
+✅ konovak@hertz.com: ALWAYS EXCLUDED (hardcoded)
+✅ Case-insensitive matching
+✅ Works across all PDF formats
+✅ Tested and verified
+
+================================================================================
+
+
+
+
+

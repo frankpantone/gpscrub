@@ -1,0 +1,176 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                      HERTZ EMAIL GENERATOR v1.1                            ║
+║                         QUICK REFERENCE CARD                               ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 🎯 WHAT IT DOES                                                            │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  ✅ Extracts vehicle data from gate release PDFs                          │
+│  ✅ EXCLUDES purchaser emails (first email in PDF)                        │
+│  ✅ INCLUDES Hertz rep emails as recipients                               │
+│  ✅ Sets deadline to 1100 (11:00 AM) on NEXT DAY                          │
+│  ✅ ATTACHES the PDF to email draft                                       │
+│  ✅ Creates Outlook draft for your review                                 │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 🚀 HOW TO USE                                                              │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  METHOD 1: Double-click                                                    │
+│    → Double-click: process_pdf.bat                                         │
+│                                                                            │
+│  METHOD 2: Single PDF                                                      │
+│    → python hertz_email_generator.py yourfile.pdf --auto                   │
+│                                                                            │
+│  METHOD 3: All PDFs in folder                                              │
+│    → python batch_process_pdfs.py --auto                                   │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 📧 EMAIL FILTERING (NEW!)                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  EXCLUDED (Not included as recipients):                                    │
+│    • First @hertz.com email in document = Purchaser email                 │
+│    • Example: konovak@hertz.com [EXCLUDED]                                │
+│                                                                            │
+│  INCLUDED (Added to TO: field):                                            │
+│    • All subsequent @hertz.com emails = Hertz reps                        │
+│    • Example: Khadijah.Goudeau@hertz.com, BSwift@hertz.com               │
+│                                                                            │
+│  WHY: Prevents accidental emails to purchasers                            │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ ⏰ DEADLINE FORMAT (NEW!)                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  Subject Line Format:                                                      │
+│    HERTZ LOGISTICS CONFIRMATION - VIN # (xxx) -                           │
+│    CONDITION/LOCATION - RESPONSE NEEDED BY 1100 on 10/29                  │
+│                                                                            │
+│  Always: 1100 (11:00 AM) on the NEXT DAY                                  │
+│    • Today is 10/28 → Shows "1100 on 10/29"                               │
+│    • Today is 10/29 → Shows "1100 on 10/30"                               │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 📎 PDF ATTACHMENT (NEW!)                                                   │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  ✅ Source PDF is AUTOMATICALLY attached to every email draft             │
+│  ✅ No manual attachment needed                                            │
+│  ✅ Recipients get full context                                            │
+│                                                                            │
+│  You'll see: [OK] PDF attached: filename.pdf                              │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 📊 EXAMPLE OUTPUT                                                          │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  PDF File: GR4031029_KNDPU3AF3P7143419.pdf                                │
+│                                                                            │
+│  Hertz Representative Emails (TO Recipients):                              │
+│    - BSwift@hertz.com                                                      │
+│    - Khadijah.Goudeau@hertz.com                                           │
+│                                                                            │
+│  Excluded Emails (Purchaser):                                              │
+│    - konovak@hertz.com [EXCLUDED - First email/Purchaser]                │
+│                                                                            │
+│  Vehicle Information:                                                      │
+│    VIN:   KNDPU3AF3P7143419                                               │
+│    Year:  2023                                                             │
+│    Make:  Kia                                                              │
+│    Model: Sportage                                                         │
+│                                                                            │
+│  [OK] PDF attached: GR4031029_KNDPU3AF3P7143419.pdf                       │
+│  [OK] Outlook email draft created successfully!                           │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ ✉️ WHAT THE EMAIL LOOKS LIKE                                              │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  To: BSwift@hertz.com; Khadijah.Goudeau@hertz.com                        │
+│                                                                            │
+│  Subject: HERTZ LOGISTICS CONFIRMATION - VIN # (KNDPU3AF3P7143419) -     │
+│           CONDITION/LOCATION - RESPONSE NEEDED BY 1100 on 10/29           │
+│                                                                            │
+│  Attachment: 📎 GR4031029_KNDPU3AF3P7143419.pdf                           │
+│                                                                            │
+│  Body:                                                                     │
+│    Hello,                                                                  │
+│                                                                            │
+│    Please confirm this unit is on site at 2825 W. Perimeter Rd           │
+│    Indianapolis, IN 46241 – Hertz is transporting to the dealer           │
+│                                                                            │
+│    KNDPU3AF3P7143419 – 2023 Kia Sportage                                 │
+│                                                                            │
+│    Please answer the following questions regarding the status...          │
+│    1. Is there any damage on the body of this vehicle? Y or N             │
+│    2. Is there any glass damage (chips or cracks)? Y or N                 │
+│    3. Is there any paint mismatch... Y or N                               │
+│    4. Are all the tires in good condition... Y or N                       │
+│    5. Is the interior clean and debris free? Y or N                       │
+│                                                                            │
+│    Best regards,                                                           │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 🔧 TROUBLESHOOTING                                                         │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  Wrong email excluded?                                                     │
+│    → First email in document is always excluded                           │
+│    → Check PDF structure if unexpected                                     │
+│                                                                            │
+│  PDF not attached?                                                         │
+│    → Check console for warning message                                     │
+│    → Verify PDF exists in same location                                    │
+│                                                                            │
+│  Wrong deadline date?                                                      │
+│    → Check your system date/time                                           │
+│    → Should always show next calendar day                                  │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ 📚 MORE HELP                                                               │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│  START_HERE.txt         → Visual quick start guide                        │
+│  QUICK_START.md         → Step-by-step beginner guide                     │
+│  README.md              → Complete documentation                           │
+│  UPDATES_SUMMARY.md     → Details on new features (v1.1)                  │
+│  FILE_GUIDE.txt         → What each file does                             │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                          ✅ ALL SYSTEMS GO!                               ║
+║                                                                            ║
+║              Your script is ready with all improvements:                   ║
+║                                                                            ║
+║                  ✅ Purchaser emails excluded                             ║
+║                  ✅ Deadline: 1100 next day                               ║
+║                  ✅ PDF auto-attached                                     ║
+║                                                                            ║
+║                   Double-click process_pdf.bat to start!                   ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+Version 1.1 | Updated: October 28, 2025
+
+
+
+

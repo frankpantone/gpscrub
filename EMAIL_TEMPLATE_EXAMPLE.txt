@@ -1,0 +1,149 @@
+================================================================================
+                     GENERATED EMAIL EXAMPLE
+================================================================================
+
+This is what the automatically generated email will look like in Outlook.
+
+================================================================================
+EMAIL DETAILS
+================================================================================
+
+TO:       Khadijah.Goudeau@hertz.com; BSwift@hertz.com
+
+SUBJECT:  HERTZ LOGISTICS CONFIRMATION - VIN # (KNDPU3AF3P7143419) - 
+          CONDITION/LOCATION - RESPONSE NEEDED BY 1000 ON 10/29
+
+BODY:
+--------------------------------------------------------------------------------
+
+Hello,
+ 
+Please confirm this unit is on site at 2825 W. Perimeter Rd Indianapolis, IN 46241 – Hertz is transporting to the dealer 
+ 
+KNDPU3AF3P7143419 – 2023 Kia Sportage
+ 
+Please answer the following questions regarding the status of the unit so we can ensure its in good condition to be sold.
+ 
+1. Is there any damage on the body of this vehicle? Y or N
+2. Is there any glass damage (chips or cracks)? Y or N
+3. Is there any paint mismatch (likely from previous repair) Y or N
+4. Are all the tires in good condition (no flats or low tires)? Y or N
+5. Is the interior clean and debris free? Y or N
+ 
+Best regards,
+
+--------------------------------------------------------------------------------
+
+================================================================================
+DATA EXTRACTED FROM PDF
+================================================================================
+
+Source PDF:  GR4031029_KNDPU3AF3P7143419.pdf
+
+Recipients (extracted from PDF):
+  • Khadijah.Goudeau@hertz.com  ← Hertz Rep email
+  • BSwift@hertz.com            ← Hertz Rep email (Brian Swift)
+  • konovak@hertz.com           ← Purchaser email (NOT included in To: field)
+
+Vehicle Details (extracted from PDF):
+  • VIN:       KNDPU3AF3P7143419
+  • Year:      2023
+  • Make:      Kia
+  • Model:     Sportage
+  • Color:     Gray
+  • Body:      FWD
+  • License:   QNFB46
+  • Odometer:  66855
+
+Location Details (extracted from PDF):
+  • Pickup:    2825 W. Perimeter Rd
+  • City:      Indianapolis, IN 46241
+  • Phone:     (317) 775-8055
+  • Hours:     M-F 8am - 3pm
+
+Order Information (extracted from PDF):
+  • Order #:   4031029
+  • Date:      2025-10-28
+  • Contact:   Brian Swift/Khadijah Goudeau
+
+================================================================================
+CUSTOMIZATION OPTIONS
+================================================================================
+
+You can customize the email template by editing hertz_email_generator.py:
+
+1. SUBJECT LINE
+   Edit the create_email_subject() method (lines 159-163)
+   
+   Current format:
+   "HERTZ LOGISTICS CONFIRMATION - VIN # ({vin}) - CONDITION/LOCATION - 
+    RESPONSE NEEDED BY {deadline}"
+
+2. EMAIL BODY
+   Edit the create_email_body() method (lines 165-184)
+   
+   You can:
+   - Change the greeting
+   - Modify the questions
+   - Add additional information
+   - Change the signature
+
+3. RESPONSE DEADLINE
+   Edit the generate_response_deadline() method (line 155)
+   
+   Default: 24 hours from now
+   Change hours_from_now=24 to your preferred deadline
+
+4. RECIPIENTS
+   Currently includes only Hertz representative emails
+   Purchaser emails are excluded automatically
+   
+   To change this logic, edit lines 192-194:
+   if self.data.get('hertz_rep_emails'):
+       mail.To = "; ".join(self.data['hertz_rep_emails'])
+
+================================================================================
+WORKFLOW
+================================================================================
+
+1. Place PDF in folder
+   └─> GR4031029_KNDPU3AF3P7143419.pdf
+
+2. Run script
+   └─> python hertz_email_generator.py --auto
+
+3. Script extracts data
+   ├─> VIN, Year, Make, Model
+   ├─> Location address
+   ├─> Hertz rep emails
+   └─> Contact information
+
+4. Outlook draft created
+   ├─> Opens automatically in Outlook
+   ├─> Recipients pre-filled
+   ├─> Subject pre-filled
+   └─> Body pre-filled with vehicle details
+
+5. Review and send
+   ├─> Check all details are correct
+   ├─> Make any manual edits if needed
+   ├─> Add CC/BCC if needed
+   └─> Click Send
+
+================================================================================
+BENEFITS
+================================================================================
+
+✓ Saves time - no manual typing
+✓ Reduces errors - automated extraction
+✓ Consistent format - standardized emails
+✓ Easy to review - draft opens in Outlook
+✓ Safe - never sends automatically
+✓ Flexible - can edit before sending
+✓ Batch capable - process multiple PDFs
+
+================================================================================
+
+
+
+

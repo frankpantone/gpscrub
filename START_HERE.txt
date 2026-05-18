@@ -1,0 +1,146 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║               🎉 HERTZ PDF SCRUBBER & EMAIL GENERATOR 🎉                  ║
+║                                                                            ║
+║                            ✅ READY TO USE!                               ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+                           📋 WHAT THIS DOES
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+Automatically processes Hertz gate release PDFs and creates email drafts:
+
+  ✓ Extracts VIN, year, make, model
+  ✓ Finds pickup location and address
+  ✓ Identifies Hertz representative emails
+  ✓ Creates Outlook email draft with your template
+  ✓ Pre-fills subject, recipients, and body
+  ✓ Opens draft for you to review and send
+
+
+                          🚀 QUICK START (3 STEPS)
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  1️⃣  Put your PDF files in this folder
+
+  2️⃣  Double-click: process_pdf.bat
+
+  3️⃣  Review the draft in Outlook and click Send!
+
+
+                         💡 WHAT JUST HAPPENED?
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+When you ran the script with your example PDF:
+
+  📄 Input:  GR4031029_KNDPU3AF3P7143419.pdf
+
+  📊 Extracted:
+     • VIN:        KNDPU3AF3P7143419
+     • Vehicle:    2023 Kia Sportage
+     • Location:   2825 W. Perimeter Rd Indianapolis, IN 46241
+     • Emails:     Khadijah.Goudeau@hertz.com, BSwift@hertz.com
+     • Phone:      (317) 775-8055
+     • Order:      4031029
+
+  ✉️  Created Email Draft:
+     To:      Khadijah.Goudeau@hertz.com; BSwift@hertz.com
+     Subject: HERTZ LOGISTICS CONFIRMATION - VIN # (KNDPU3AF3P7143419)...
+     Body:    Pre-filled with vehicle details and 5 questions
+
+  ✅ Status:   SUCCESS! Draft opened in Outlook
+
+
+                            📚 NEED MORE INFO?
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  📖 First time?           → Open: QUICK_START.md
+  📖 Full documentation    → Open: README.md
+  📖 See email example     → Open: EMAIL_TEMPLATE_EXAMPLE.txt
+  📖 What do files do?     → Open: FILE_GUIDE.txt
+  📖 Project overview      → Open: PROJECT_SUMMARY.md
+
+
+                          ⚙️  DIFFERENT WAYS TO USE
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  🖱️  EASIEST (Double-click):
+      process_pdf.bat
+
+  ⌨️  COMMAND LINE (Single PDF):
+      python hertz_email_generator.py yourfile.pdf --auto
+
+  ⌨️  COMMAND LINE (All PDFs):
+      python batch_process_pdfs.py --auto
+
+
+                           🎯 WHAT YOU CAN DO
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  ✅ Process one PDF at a time
+  ✅ Process multiple PDFs in batch
+  ✅ Auto-create drafts or review each one
+  ✅ Extract data without creating emails
+  ✅ Customize email templates
+  ✅ Generate processing reports
+  ✅ Review extracted data before sending
+
+
+                          🔒 SAFE & SECURE
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  ✓ Only creates DRAFTS (never sends automatically)
+  ✓ You review before sending
+  ✓ All processing happens on YOUR computer
+  ✓ No data sent to external servers
+  ✓ Original PDFs are never modified
+
+
+                         🛠️  TROUBLESHOOTING
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  ❌ "Python not found"
+      → Install Python from python.org
+      → Make sure to check "Add to PATH"
+
+  ❌ "No module named pypdf"
+      → Run: pip install pypdf pywin32
+
+  ❌ "Error creating Outlook draft"
+      → Make sure Outlook is installed
+      → Open Outlook once to configure it
+
+  ❌ "Wrong data extracted"
+      → Check: pdf_extracted_text.txt
+      → Verify PDF is a standard gate release form
+
+  ❌ Still stuck?
+      → Read QUICK_START.md for step-by-step help
+
+
+                           📞 QUICK TIPS
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+  💡 Process one PDF first to test
+  💡 Review the draft before sending
+  💡 You can edit the draft manually
+  💡 Use batch mode for many PDFs
+  💡 Check batch reports for summaries
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                         🎉 YOU'RE ALL SET! 🎉                             ║
+║                                                                            ║
+║                    Double-click: process_pdf.bat                          ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+              🚀 READY TO GO! JUST DOUBLE-CLICK process_pdf.bat 🚀
+
+
+
+

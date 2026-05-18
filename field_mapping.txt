@@ -1,0 +1,147 @@
+================================================================================
+                    PDF FIELD MAPPING - LINE BY LINE
+================================================================================
+
+LINE | TYPE        | CONTENT
+-----|-------------|----------------------------------------------------------
+  1  | PLACEHOLDER | Pickup Location Gate Release Code
+  2  | PLACEHOLDER | Contact 
+  3  | PLACEHOLDER | Phone
+  4  | PLACEHOLDER | Address Email
+  5  | PLACEHOLDER | Hours of Operation
+  6  | PLACEHOLDER | Order Number
+  7  | PLACEHOLDER | Instruction
+  8  | PLACEHOLDER | Vehicle Information Noted Damage
+  9  | PLACEHOLDER |   Owning Area Number Unit Number
+ 10  | PLACEHOLDER |   Serial Odometer
+ 11  | PLACEHOLDER |   Model Year Color
+ 12  | PLACEHOLDER |   Make Model
+ 13  | PLACEHOLDER |   Body Type / Pkg License #
+ 14  | PLACEHOLDER | Purchaser
+ 15  | PLACEHOLDER |   Representative   Name
+ 16  | PLACEHOLDER |   Manager   Contact
+ 17  | PLACEHOLDER |   Office #   Address
+ 18  | PLACEHOLDER |   Cell #
+ 19  | PLACEHOLDER |   Fax #   Phone
+ 20  | PLACEHOLDER |   Email
+ 21  | PLACEHOLDER | Driver / Transporter Information
+ 22  | PLACEHOLDER |   Transport Company / Dealership
+ 23  | PLACEHOLDER |   Driver / Transporter Printed Name
+ 24  | PLACEHOLDER |   Driver / Transporter License Number
+ 25  | PLACEHOLDER |   Driver / Transporter Signature
+ 26  | PLACEHOLDER |   Hertz Authorized Signature
+ 27  | PLACEHOLDER |   Date Picked Up
+ 28  | VALUE       | Name
+ 29  | VALUE       | (317) 775-8055                          [PHONE]
+ 30  | VALUE       | (317) 775-8055                          [PHONE - DUPLICATE]
+ 31  | VALUE       | M-F 8am - 3pm                           [HOURS]
+ 32  | VALUE       | Brian Swift/Khadijah Goudeau            [INSTRUCTION/NAMES]
+ 33  | VALUE       | GRAY                                    [VEHICLE COLOR]
+ 34  | VALUE       | Mike Bloom                              [NAME]
+ 35  | VALUE       | 4031029                                 [ORDER NUMBER]
+ 36  | VALUE       | 4142179780                              [PHONE]
+ 37  | VALUE       | konovak@hertz.com                       ⚠️ [EMAIL #1]
+ 38  | VALUE       | 2825 W. Perimeter Rd                    [ADDRESS]
+ 39  | VALUE       | 221 N 36th St                           [ADDRESS]
+ 40  | VALUE       | 2025-10-28                              [DATE]
+ 41  | VALUE       | Indianapolis, IN 46241                  [ADDRESS]
+ 42  | VALUE       | Kunes Country Honda of Quincy Inc       [COMPANY]
+ 43  | VALUE       | Khadijah.Goudeau@hertz.com              ⚠️ [EMAIL #2]
+ 44  | VALUE       | FWD                                     [VEHICLE BODY TYPE]
+ 45  | VALUE       | BSwift@hertz.com                        ⚠️ [EMAIL #3]
+ 46  | VALUE       | SPORTAGE                                [VEHICLE MODEL]
+ 47  | VALUE       | KIA                                     [VEHICLE MAKE]
+ 48  | VALUE       | Kori Novak                              [NAME]
+ 49  | VALUE       | 8662225012                              [PHONE]
+ 50  | VALUE       | 2151439                                 [ID/LICENSE NUMBER]
+ 51  | VALUE       | 66855                                   [ODOMETER]
+ 52  | VALUE       | Transporter and Purchaser agree...      [LEGAL TEXT]
+ 53  | VALUE       | loss or damage to vehicle(s)...         [LEGAL TEXT]
+ 54  | VALUE       | and accepted by Transporter...          [LEGAL TEXT]
+ 55  | VALUE       | RHP AP INDIANAPOLIS                     [OWNING AREA]
+ 56  | VALUE       | 2836                                    [UNIT NUMBER]
+ 57  | VALUE       | VL3NRTBB                                [VL CODE]
+ 58  | VALUE       | 2023                                    [MODEL YEAR]
+ 59  | VALUE       | Kori Novak                              [NAME - DUPLICATE]
+ 60  | VALUE       | Quincy, IL 62301                        [ADDRESS]
+ 61  | VALUE       | 4142179780                              [PHONE - DUPLICATE]
+ 62  | VALUE       | QNFB46                                  [LICENSE NUMBER]
+ 63  | PLACEHOLDER | Hertz Rep Information
+ 64  | VALUE       | KNDPU3AF3P7143419                       [VIN/SERIAL]
+ 65  | VALUE       | 2172287000                              [PHONE]
+ 66  | VALUE       | TRANSPORTER MUST PRESENT THIS...        [INSTRUCTION]
+ 67  | VALUE       | There is no Hertz buildings...          [INSTRUCTION]
+
+================================================================================
+                        EMAIL ADDRESSES SUMMARY
+================================================================================
+
+Position | Email Address                  | Context
+---------|--------------------------------|-------------------------------------
+Line 37  | konovak@hertz.com             | Purchaser representative email
+Line 43  | Khadijah.Goudeau@hertz.com    | Hertz rep/contact email
+Line 45  | BSwift@hertz.com              | Hertz rep/contact email (B. Swift)
+
+================================================================================
+                        DOCUMENT STRUCTURE BREAKDOWN
+================================================================================
+
+┌─ HEADER SECTION (Lines 1-27)
+│  └─ Field Labels/Placeholders Only
+│     ├─ Pickup Location fields
+│     ├─ Order/Instruction fields  
+│     ├─ Vehicle Information fields
+│     ├─ Purchaser fields
+│     └─ Driver/Transporter fields
+│
+├─ DATA SECTION (Lines 28-62)
+│  └─ Actual Values Filled In
+│     ├─ Contact Info (Lines 28-31)
+│     ├─ Instruction/Names (Line 32)
+│     ├─ Order & Vehicle Details (Lines 33-51)
+│     │  ├─ Line 37: EMAIL #1 ⚠️
+│     │  ├─ Line 43: EMAIL #2 ⚠️
+│     │  └─ Line 45: EMAIL #3 ⚠️
+│     └─ Additional IDs (Lines 55-62)
+│
+├─ HEADER LABEL (Line 63)
+│  └─ "Hertz Rep Information"
+│
+├─ ADDITIONAL DATA (Lines 64-65)
+│  └─ VIN and Phone
+│
+└─ FOOTER INSTRUCTIONS (Lines 66-67)
+   └─ Legal text and pickup instructions
+
+================================================================================
+                    KEY FINDINGS FOR SCRUBBING
+================================================================================
+
+PLACEHOLDERS (Lines 1-27, 63):
+→ These are template field labels
+→ Should NOT be modified during scrubbing
+→ Examples: "Email", "Phone", "Order Number", "Contact"
+
+VALUES (Lines 28-62, 64-67):
+→ These contain actual data
+→ Email addresses appear in this section
+→ Should be scrubbed/replaced
+
+EMAIL PATTERN:
+→ Format: [username]@hertz.com
+→ All 3 emails follow standard email format
+→ All are Hertz domain emails
+→ Located at specific line numbers: 37, 43, 45
+
+SCRUBBING CONSIDERATIONS:
+1. Replace only email addresses in value lines (not placeholder labels)
+2. Consider maintaining format: [REDACTED]@hertz.com or [EMAIL_REMOVED]
+3. Phone numbers also present (lines 29, 30, 36, 49, 61, 65)
+4. Personal names present (lines 32, 34, 48, 59)
+5. Addresses present (lines 38, 39, 41, 60)
+
+================================================================================
+
+
+
+

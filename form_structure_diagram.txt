@@ -1,0 +1,192 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    GATE RELEASE FORM - STRUCTURAL DIAGRAM                  ║
+║                    Document: GR4031029_KNDPU3AF3P7143419.pdf              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 1: PICKUP LOCATION                                              ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  [Pickup Location Gate Release Code] (placeholder)                      ┃
+┃                                                                          ┃
+┃  Contact:           Name                                                 ┃
+┃  Phone:             (317) 775-8055                                       ┃
+┃  Address:           (not filled)                                         ┃
+┃  Email:             (not filled)                                         ┃
+┃  Hours:             M-F 8am - 3pm                                        ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 2: ORDER INFORMATION                                            ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  Order Number:      4031029                                              ┃
+┃  Instruction:       Brian Swift/Khadijah Goudeau                         ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 3: VEHICLE INFORMATION                                          ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  Owning Area:       RHP AP INDIANAPOLIS                                  ┃
+┃  Unit Number:       2836                                                 ┃
+┃  Serial (VIN):      KNDPU3AF3P7143419                                    ┃
+┃  Odometer:          66855                                                ┃
+┃  Model Year:        2023                                                 ┃
+┃  Color:             GRAY                                                 ┃
+┃  Make:              KIA                                                  ┃
+┃  Model:             SPORTAGE                                             ┃
+┃  Body Type/Pkg:     FWD                                                  ┃
+┃  License #:         QNFB46                                               ┃
+┃  VL Code:           VL3NRTBB                                             ┃
+┃  Noted Damage:      (not filled)                                         ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 4: PURCHASER INFORMATION                                        ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  Representative:    (not clearly filled)                                 ┃
+┃  Manager:           Mike Bloom                                           ┃
+┃  Office #:          (not filled)                                         ┃
+┃  Cell #:            (not filled)                                         ┃
+┃  Fax #:             (not filled)                                         ┃
+┃                                                                          ┃
+┃  Name:              Kori Novak                                           ┃
+┃  Contact:           414-217-9780                                         ┃
+┃  Address:           221 N 36th St                                        ┃
+┃                     Quincy, IL 62301                                     ┃
+┃  Phone:             414-217-9780                                         ┃
+┃  Email:             konovak@hertz.com              ⚠️ [EMAIL #1]        ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 5: HERTZ REPRESENTATIVE INFORMATION                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  Contact Name:      Kori Novak                                           ┃
+┃  Phone:             866-222-5012                                         ┃
+┃  Address:           2825 W. Perimeter Rd                                 ┃
+┃                     Indianapolis, IN 46241                               ┃
+┃  Email 1:           Khadijah.Goudeau@hertz.com     ⚠️ [EMAIL #2]        ┃
+┃  Email 2:           BSwift@hertz.com               ⚠️ [EMAIL #3]        ┃
+┃  Additional Phone:  217-228-7000                                         ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 6: DRIVER/TRANSPORTER INFORMATION                               ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  Transport Company: Kunes Country Honda of Quincy Inc                    ┃
+┃  Driver Name:       (signature required)                                 ┃
+┃  License Number:    2151439 (possible)                                   ┃
+┃  Date Picked Up:    2025-10-28                                           ┃
+┃                                                                          ┃
+┃  [ Signature fields for Driver/Transporter and Hertz Auth ]              ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ SECTION 7: LEGAL & INSTRUCTIONS                                         ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃                                                                          ┃
+┃  Legal Disclaimer:                                                       ┃
+┃  "Transporter and Purchaser agree to assume responsibility for any       ┃
+┃   risk, loss or damage to vehicle(s) at such time as the vehicle(s)     ┃
+┃   are received and accepted by Transporter or Purchaser."                ┃
+┃                                                                          ┃
+┃  Instructions:                                                           ┃
+┃  • TRANSPORTER MUST PRESENT THIS GATE RELEASE AT TIME OF PICK UP.       ┃
+┃    VEHICLE WILL NOT BE RELEASED WITHOUT IT                               ┃
+┃                                                                          ┃
+┃  • There is no Hertz buildings or employees on this lot.                 ┃
+┃    Please call us at (317) 775-8055 and we will come meet you on        ┃
+┃    this lot                                                              ┃
+┃                                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                         PLACEHOLDER vs VALUE SUMMARY                       ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  PLACEHOLDERS (Field Labels - Do NOT Modify):                             ║
+║  ─────────────────────────────────────────────                            ║
+║   • Section headers (lines 1-27, 63)                                      ║
+║   • Field names like "Email", "Phone", "Contact", "Order Number"          ║
+║   • Structural text elements                                              ║
+║   • These define the TEMPLATE/FORM structure                              ║
+║                                                                            ║
+║  VALUES (Actual Data - CAN Modify):                                       ║
+║  ──────────────────────────────────                                       ║
+║   • All filled-in data (lines 28-62, 64-67)                               ║
+║   • Email addresses ⚠️                                                    ║
+║   • Phone numbers                                                          ║
+║   • Names                                                                  ║
+║   • Addresses                                                              ║
+║   • Vehicle details                                                        ║
+║   • Dates                                                                  ║
+║   • Company names                                                          ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                        EMAIL SCRUBBING TARGET LIST                         ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  ⚠️  EMAIL #1: konovak@hertz.com                                          ║
+║     Location: Line 37                                                      ║
+║     Context:  Purchaser contact email (Kori Novak)                        ║
+║     Section:  Purchaser Information                                        ║
+║                                                                            ║
+║  ⚠️  EMAIL #2: Khadijah.Goudeau@hertz.com                                 ║
+║     Location: Line 43                                                      ║
+║     Context:  Hertz representative email                                   ║
+║     Section:  Hertz Rep Information                                        ║
+║                                                                            ║
+║  ⚠️  EMAIL #3: BSwift@hertz.com                                           ║
+║     Location: Line 45                                                      ║
+║     Context:  Hertz representative email (Brian Swift)                     ║
+║     Section:  Hertz Rep Information                                        ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                     RECOMMENDED SCRUBBING APPROACH                         ║
+╠════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  Option 1: Complete Removal                                               ║
+║  ───────────────────────                                                  ║
+║   konovak@hertz.com              →  [REDACTED]                            ║
+║   Khadijah.Goudeau@hertz.com     →  [REDACTED]                            ║
+║   BSwift@hertz.com               →  [REDACTED]                            ║
+║                                                                            ║
+║  Option 2: Role-Based Placeholder                                         ║
+║  ────────────────────────────────                                         ║
+║   konovak@hertz.com              →  [PURCHASER_EMAIL]                     ║
+║   Khadijah.Goudeau@hertz.com     →  [HERTZ_REP_EMAIL_1]                  ║
+║   BSwift@hertz.com               →  [HERTZ_REP_EMAIL_2]                  ║
+║                                                                            ║
+║  Option 3: Format-Preserving (partial redaction)                          ║
+║  ────────────────────────────────────────────                             ║
+║   konovak@hertz.com              →  [REDACTED]@hertz.com                  ║
+║   Khadijah.Goudeau@hertz.com     →  [REDACTED]@hertz.com                  ║
+║   BSwift@hertz.com               →  [REDACTED]@hertz.com                  ║
+║                                                                            ║
+║  Option 4: Generic Email Format                                           ║
+║  ──────────────────────────────                                           ║
+║   konovak@hertz.com              →  contact@example.com                   ║
+║   Khadijah.Goudeau@hertz.com     →  contact@example.com                   ║
+║   BSwift@hertz.com               →  contact@example.com                   ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+END OF STRUCTURAL ANALYSIS
+
+
+
+
